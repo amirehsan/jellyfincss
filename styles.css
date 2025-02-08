@@ -1,3 +1,34 @@
+@font-face {
+    font-family: 'IRAN';
+    src: url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/styles.css@main/IRAN.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/styles.css@main/IRAN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRAN';
+    src: url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/styles.css@main/IRANBlack.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/styles.css@main/IRANBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRAN';
+    src: url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/styles.css@main/IRANBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/styles.css@main/IRANBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRAN';
+    src: url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/styles.css@main/IRAN_SemiBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/styles.css@main/IRAN_SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
 :host,
 html {
   -webkit-text-size-adjust: 100%;
@@ -11,6 +42,9 @@ html {
 .dialog,
 html {
   background-color: rgb(9 9 11 / 90%) !important;
+}
+body {
+    font-family: 'IRAN', sans-serif;
 }
 .skinHeader-withBackground {
   background-color: #18181b;
