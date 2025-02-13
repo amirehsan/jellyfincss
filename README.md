@@ -44,7 +44,7 @@ html, body { font-family: 'IRAN', sans-serif !important; }
 
 ### Color Scheme
 
-All colors are defined as CSS variables at the top of the stylesheet. To modify any color in the theme, you only need to change it in one place. For example, to change the tab hover color (currently #00a4dc), find this section at the top of the CSS:
+All colors are defined as CSS variables at the top of the stylesheet. To modify any color in the theme, you only need to change it in one place. For example, to change the primary color, find this section at the top of the CSS:
 
 ```css
 :root {
