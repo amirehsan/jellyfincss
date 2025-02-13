@@ -20,6 +20,7 @@ A modern dark theme for Jellyfin Media Server with lime green accents and Persia
 ![Movie Details](screenshots/details.png)
 ![TV Shows](screenshots/shows.png)
 
+
 ## Quick Start
 
 ### Basic Theme Installation
@@ -40,6 +41,17 @@ html, body { font-family: 'IRAN', sans-serif !important; }
 ```
 
 ## Customization
+
+### Color Scheme
+
+All colors are defined as CSS variables at the top of the stylesheet. To modify any color in the theme, you only need to change it in one place. For example, to change the tab hover color (currently #00a4dc), find this section at the top of the CSS:
+
+```css
+:root {
+    --theme-tab-hover: #00a4dc;
+    /* other color variables */
+}
+```
 
 ### Logo Customization
 
