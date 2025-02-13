@@ -149,7 +149,7 @@ html {
 
 .paper-icon-button-light:hover:not(:disabled) {
   color: #000000;
-  background-color: var(--color-primary-hover);
+  background-color: var(--color-primary);
 }
 
 .navMenuOption-selected,
