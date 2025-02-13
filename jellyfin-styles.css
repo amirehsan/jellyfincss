@@ -1,0 +1,325 @@
+/* Color Variables */
+:root {
+  --color-primary: #ccff00;
+  --color-primary-dark: #b9f251;
+  --color-primary-transparent: rgb(204 255 0 / 50%);
+  --color-primary-hover: rgb(187 244 82 / 70%);
+  --color-background: rgb(9 9 11 / 90%);
+  --color-background-header: #18181b;
+  --color-background-secondary: #1d1d20;
+  --color-background-hover: #262d1b;
+  --color-text-secondary: #81818a;
+  --color-overlay: rgb(9 58 6 / 50%);
+  --color-progress-background: rgb(35 53 0 / 80%);
+  --color-input-border: #292929;
+  --color-card-1: #ccff00;
+  --color-card-2: #A3CC00;
+  --color-card-3: #728F00;
+  --color-card-4: #415200;
+}
+
+/* Font Face Declarations */
+@font-face {
+    font-family: 'IRAN';
+    src: url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/IRAN.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/IRAN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRAN';
+    src: url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/IRANBlack.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/IRANBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRAN';
+    src: url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/IRANBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/IRANBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRAN';
+    src: url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/IRAN_SemiBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/IRAN_SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Base Styles */
+:host,
+html {
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  line-height: 1.5;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Background Elements */
+.backgroundContainer,
+.dialog,
+html {
+  background-color: var(--color-background) !important;
+}
+
+.skinHeader-withBackground {
+  background-color: var(--color-background-header);
+}
+
+/* Card Styles */
+[dir="ltr"] .itemsContainer > .card > .cardBox {
+  margin-left: 0;
+  margin-right: 1.2em;
+  background: var(--color-background-header);
+  border-radius: 0.5rem;
+  padding-bottom: 1rem !important;
+}
+
+.cardText-first {
+  padding-top: 1rem;
+}
+
+.cardBox:not(.visualCardBox) .cardPadder,
+.cardContent-shadow {
+  box-shadow: unset;
+}
+
+.cardOverlayContainer {
+  background: var(--color-overlay);
+}
+
+.cardOverlayContainer > .cardOverlayFab-primary {
+  background-color: var(--color-primary-hover);
+  color: #000000;
+}
+
+/* Progress Indicators */
+.itemProgressBar {
+  background: var(--color-background-hover) !important;
+}
+
+.itemProgressBarForeground {
+  background-color: var(--color-primary);
+}
+
+/* Text Styles */
+.textActionButton {
+  font-size: 1rem;
+  line-height: calc(0.25rem * 7);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+.cardText-secondary,
+.fieldDescription,
+.guide-programNameCaret,
+.listItem .secondary,
+.nowPlayingBarSecondaryText,
+.programSecondaryTitle,
+.secondaryText {
+  color: var(--color-text-secondary);
+}
+
+/* Indicators and Badges */
+.countIndicator,
+.fullSyncIndicator,
+.mediaSourceIndicator,
+.playedIndicator {
+  background: var(--color-progress-background);
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 2px;
+  box-shadow: unset;
+}
+
+/* Navigation and Interactive Elements */
+.emby-tab-button:hover {
+  color: var(--color-primary);
+}
+
+.navMenuOption-selected,
+.navMenuOption:hover,
+.listItem:hover {
+  background: var(--color-background-hover) !important;
+  color: white;
+}
+
+.listItem:hover .listItem-content .listItemBody .secondary {
+  color: var(--color-primary);
+}
+
+/* Form Elements */
+.emby-input,
+.emby-textarea {
+  color: inherit;
+  background: color-mix(in oklab, #fff 5%, transparent);
+  border: 0.16em solid var(--color-input-border);
+  border-radius: 0.2em;
+  border-color: color-mix(in oklab, #fff 10%, transparent);
+  font-size: 0.875rem;
+  padding-block: 0.625rem;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5rem;
+}
+
+.emby-input:focus,
+.emby-textarea:focus {
+  border-color: var(--color-primary);
+}
+
+/* Button Styles */
+.button-link, .button-flat:hover  {
+  color: var(--color-primary);
+}
+
+.button-submit {
+  background: var(--color-primary-dark);
+  color: #000000;
+}
+
+.button-submit:focus {
+  background: var(--color-background-hover);
+  color: var(--color-primary);
+}
+
+/* Default Card Backgrounds */
+.defaultCardBackground1 {
+  background-color: var(--color-card-1);
+  color: #000;
+}
+
+.defaultCardBackground2 {
+  background-color: var(--color-card-2);
+  color: #000;
+}
+
+.defaultCardBackground3 {
+  background-color: var(--color-card-3);
+  color: #000;
+}
+
+.defaultCardBackground4 {
+  background-color: var(--color-card-4);
+  color: #000;
+}
+
+/* Progress and Loading Elements */
+.progressring-spiner {
+  border-color: var(--color-primary);
+}
+
+.mdl-slider-background-lower {
+  background-color: var(--color-primary);
+}
+
+.mdl-slider::-webkit-slider-thumb {
+  background: var(--color-primary) !important;
+}
+
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4 {
+  border-color: var(--color-primary) !important;
+}
+
+/* Checkbox Styles */
+.checkboxIcon {
+  color: var(--color-primary-dark);
+}
+
+.emby-checkbox:checked + span + .checkboxOutline {
+  background-color: #283115;
+  border-color: #bbf351;
+}
+
+/* MUI Components */
+.css-17c09up.Mui-selected .css-37qkju {
+    color: var(--color-primary);
+}
+
+.css-17c09up.Mui-selected {
+    background-color: var(--color-background-hover);
+    color: var(--color-primary);
+}
+
+.css-17c09up.Mui-selected:hover {
+    background-color: var(--color-primary-transparent);
+}
+
+.css-192q3pc {
+    background-color: var(--color-primary);
+    color: #000;
+}
+
+.css-195jjve {
+    background-color: var(--color-background-hover) !important;
+    color: var(--color-primary);
+}
+
+/* List Items */
+.listItemImageButton:hover {
+    color: var(--color-primary) !important;
+}
+
+.listItemIcon:not(.listItemIcon-transparent) {
+    background-color: var(--color-primary);
+}
+
+/* Progress and Control Groups */
+progress::-moz-progress-bar, 
+progress::-webkit-progress-value, 
+progress[aria-valuenow]:before, 
+div[data-role=controlgroup] a.ui-btn-active, 
+.playbackProgress>div {
+    background-color: var(--color-primary);
+}
+
+div[data-role="controlgroup"] a.ui-btn-active {
+    background: var(--color-primary-dark) !important;
+    color: #000000 !important;
+}
+
+/* Accent Buttons */
+.button-accent-flat {
+    color: var(--color-primary) !important;
+}
+
+/* Logo */
+.pageTitleWithDefaultLogo {
+    background-image: url(../../assets/img/banner-light.png);
+}
+
+/* Miscellaneous */
+.itemBackdrop {
+  background: rgb(204 255 0 / 5%) !important;
+}
+
+.noBackdropTransparency .detailPageSecondaryContainer {
+  background-color: var(--color-background-header);
+}
+
+.detailRibbon {
+  background: var(--color-background-secondary);
+  color: #ffffff;
+}
+
+.mediaInfoText {
+  color: #ffffff;
+  background: #000;
+}
+
+.iconOsdProgressInner, .playbackProgress>div{
+  background: var(--color-primary);
+}
