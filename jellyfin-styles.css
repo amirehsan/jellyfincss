@@ -147,6 +147,11 @@ html {
   color: var(--color-primary);
 }
 
+.paper-icon-button-light:hover:not(:disabled) {
+  color: #000000;
+  background-color: var(--color-background-hover);
+}
+
 .navMenuOption-selected,
 .navMenuOption:hover,
 .listItem:hover {
