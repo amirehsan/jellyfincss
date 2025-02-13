@@ -28,7 +28,7 @@ A modern dark theme for Jellyfin Media Server with lime green accents and Persia
 1. Go to Jellyfin dashboard: `Site > Dashboard > General > Custom CSS`
 2. Add the following line:
 ```css
-@import url("https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/jellyfin-styles.css");
+@import url("https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/jellyfin-customized.css");
 ```
 
 ### With Persian/Arabic Support
@@ -36,7 +36,7 @@ A modern dark theme for Jellyfin Media Server with lime green accents and Persia
 1. Go to Jellyfin dashboard: `Site > Dashboard > General > Custom CSS`
 2. Add both lines:
 ```css
-@import url("https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/jellyfin-styles.css");
+@import url("https://cdn.jsdelivr.net/gh/amirehsan/jellyfincss@main/jellyfin-customized.css");
 html, body { font-family: 'IRAN', sans-serif !important; }
 ```
 
