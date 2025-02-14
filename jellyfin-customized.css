@@ -279,6 +279,7 @@ html {
 }
 
 .listItemIcon:not(.listItemIcon-transparent) {
+    color: #000;
     background-color: var(--color-primary);
 }
 
